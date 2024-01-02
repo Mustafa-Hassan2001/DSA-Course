@@ -1,16 +1,25 @@
-#include <iostream>
-using namespace std;
+//maximum occurring string
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+class Solution
+{
+    public:
+    //Function to find the maximum occurring character in a string.
+    char getMaxOccuringChar(string str)
+    {
+        int arr[26] = 0;
+        for(int i=0; i<s.length(); i++){
+            int num = 0;
+            num = ch - 'a';
+            arr[num]++;
+        }
+        
+        int max = -1, ans=0;
+        for(int i=0; i<26; i++){
+            if(max < arr[i]){
+                ans=i;
+                max = arr[i];
+            }
+        }
+    }
 
-int main(int argc, char** argv) {
-	
-	char name[20];
-	
-	cout<<"Enetr your name : ";
-	cin>>name;
-	
-	cout<<"\nYour name is "<<name;	
-	
-	return 0;
-}
+};
